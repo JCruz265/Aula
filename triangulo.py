@@ -7,14 +7,13 @@ b = float(input('Digite o tamanho do lado -B- : '))
 c = float(input('Digite o tamanho do lado -C- : '))
 #Processamento dos dados
 if (a > b + c) or (c > a + b) or (b > a + c):
-    #Saida
     print('Não é um triângulo')
 else:
     print('É um triângulo')
-if (a==b) and (b==c) and (c==a):
-    print('Equilatero')
-elif(a==b) or (c==a) or (b==c) :
-    print('Isóceles')
-else:
-    print('Escaleno')
+    if a == b and b == c and c == a:
+        print('É um triângulo Equilatero')
+    elif a == b or c == a or b == c:
+        print('É um triângulo Isóceles')
+    else:
+        print(' É um triângulo Escaleno')
 
