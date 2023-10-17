@@ -11,3 +11,10 @@ if (a > b + c) or (c > a + b) or (b > a + c):
     print('Não é um triângulo')
 else:
     print('É um triângulo')
+if (a==b) and (b==c) and (c==a):
+    print('Equilatero')
+elif(a==b) or (c==a) or (b==c) :
+    print('Isóceles')
+else:
+    print('Escaleno')
+
